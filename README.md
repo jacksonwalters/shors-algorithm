@@ -1,6 +1,4 @@
-# quantum-computing
-
-## shors_algorithm
+# shor's algorithm
 
 An implementation of Shor's algorithm for IBM Qiskit. https://learn.qiskit.org/course/ch-algorithms/shors-algorithm
 
