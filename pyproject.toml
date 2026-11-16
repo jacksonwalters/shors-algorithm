@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shors-algorithm-demo"
+version = "0.1.0"
+description = "Small-instance Shor order finding with generated modular multiplication circuits"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["qiskit>=2.0,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "nbclient>=0.10,<1", "ipykernel>=6,<8"]
+notebook = ["jupyterlab>=4,<5", "matplotlib>=3.8", "pylatexenc>=2.10"]
+ibm = ["qiskit-ibm-runtime>=0.40,<1"]
+noise = ["qiskit-aer>=0.17,<1"]
+
+[tool.setuptools.packages.find]
+include = ["shors_algorithm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

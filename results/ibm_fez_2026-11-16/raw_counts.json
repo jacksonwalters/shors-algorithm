@@ -1,0 +1,187 @@
+{
+  "job_id": "dbtp0ohdgeec739e6r1g",
+  "backend": "ibm_fez",
+  "submitted_at": "2026-11-16T23:23:15.335611+00:00",
+  "collected_at": "2026-11-16T23:25:50.878207+00:00",
+  "metrics": {
+    "caller": "qiskit",
+    "qiskit_version": "qiskit_ibm_runtime-0.52.1,qiskit-2.6.2*,qiskit_aer-0.18.2",
+    "timestamps": {
+      "created": "2026-11-16T23:23:15.097442Z",
+      "finished": "2026-11-16T23:23:23.911977Z",
+      "running": "2026-11-16T23:23:16.322564Z"
+    },
+    "usage": {
+      "qpu_charge_time_seconds": 5,
+      "value": 0.082399,
+      "unit": "resource_units",
+      "status": "complete",
+      "details": [
+        {
+          "value": 0.082399,
+          "unit": "resource_units",
+          "metric": {
+            "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+            "value": 5
+          }
+        }
+      ]
+    },
+    "circuits_execution_time_ns": 3237803264
+  },
+  "runtime_metadata": {
+    "executor": "Metadata(chunk_timing=[ChunkSpan(start=datetime.datetime(2026, 11, 16, 23, 23, 17, 863625, tzinfo=datetime.timezone.utc), stop=datetime.datetime(2026, 11, 16, 23, 23, 22, 145607, tzinfo=datetime.timezone.utc), parts=[ChunkPart(idx_item=0, size=1), ChunkPart(idx_item=1, size=1), ChunkPart(idx_item=2, size=1)])])",
+    "options": {
+      "default_shots": 4096,
+      "dynamical_decoupling": {
+        "enable": false,
+        "extra_slack_distribution": "middle",
+        "scheduling_method": "alap",
+        "sequence_type": "XX",
+        "skip_reset_qubits": false
+      },
+      "environment": {
+        "image": null,
+        "job_tags": [
+          "shor-15-21",
+          "compiled-demonstration"
+        ],
+        "log_level": "WARNING",
+        "max_execution_time": null,
+        "private": false
+      },
+      "execution": {
+        "init_qubits": true,
+        "meas_type": "classified",
+        "rep_delay": null,
+        "scheduler_timing": false,
+        "stretch_values": false
+      },
+      "experimental": {},
+      "max_execution_time": 120,
+      "simulator": {
+        "angle_decimals": 5,
+        "layer_noise_model": null,
+        "seed_simulator": null,
+        "warn_absent": true
+      },
+      "twirling": {
+        "enable_gates": false,
+        "enable_measure": false,
+        "group": "pauli",
+        "num_randomizations": "auto",
+        "shots_per_randomization": "auto",
+        "strategy": "active-accum"
+      }
+    },
+    "shots": 4096
+  },
+  "experiments": [
+    {
+      "modulus": 15,
+      "counting_qubits": 4,
+      "counts": {
+        "1000": 977,
+        "1110": 20,
+        "0000": 1041,
+        "1100": 907,
+        "0100": 915,
+        "0111": 8,
+        "0001": 33,
+        "0010": 21,
+        "1111": 14,
+        "1010": 25,
+        "0110": 23,
+        "1101": 28,
+        "0101": 39,
+        "1001": 31,
+        "0011": 6,
+        "1011": 8
+      },
+      "runtime_metadata": {
+        "circuit_metadata": {
+          "base": 2,
+          "counting_qubits": 4,
+          "implementation": "compiled_binary",
+          "modulus": 15
+        }
+      }
+    },
+    {
+      "modulus": 21,
+      "counting_qubits": 4,
+      "counts": {
+        "0000": 695,
+        "0011": 362,
+        "1011": 351,
+        "1110": 165,
+        "1010": 177,
+        "0101": 416,
+        "1000": 616,
+        "1101": 410,
+        "0100": 131,
+        "0010": 165,
+        "0001": 106,
+        "1100": 149,
+        "0111": 70,
+        "0110": 138,
+        "1001": 86,
+        "1111": 59
+      },
+      "runtime_metadata": {
+        "circuit_metadata": {
+          "base": 2,
+          "counting_qubits": 4,
+          "implementation": "compiled_encoded_orbit",
+          "modulus": 21
+        }
+      }
+    },
+    {
+      "modulus": 21,
+      "counting_qubits": 5,
+      "counts": {
+        "01011": 269,
+        "10000": 527,
+        "00010": 53,
+        "11111": 31,
+        "00101": 363,
+        "10001": 49,
+        "10101": 463,
+        "11011": 316,
+        "01001": 61,
+        "10111": 49,
+        "10011": 68,
+        "01100": 65,
+        "11010": 114,
+        "11001": 60,
+        "00100": 85,
+        "00000": 551,
+        "11101": 49,
+        "00011": 66,
+        "10110": 89,
+        "11110": 33,
+        "01010": 130,
+        "10010": 37,
+        "10100": 73,
+        "00001": 53,
+        "01111": 33,
+        "11000": 85,
+        "11100": 49,
+        "01110": 37,
+        "01101": 36,
+        "00111": 38,
+        "00110": 75,
+        "01000": 89
+      },
+      "runtime_metadata": {
+        "circuit_metadata": {
+          "base": 2,
+          "counting_qubits": 5,
+          "implementation": "compiled_encoded_orbit",
+          "modulus": 21
+        }
+      }
+    }
+  ]
+}

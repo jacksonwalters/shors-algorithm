@@ -1,0 +1,709 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-16T23:22:58.674165+00:00",
+  "backend": "ibm_fez",
+  "backend_calibration_time": "2026-11-13 11:27:59-05:00",
+  "shots_per_circuit": 4096,
+  "maximum_job_execution_seconds": 120,
+  "circuits_sha256": "ae9b6171355f13a11cf0eb20f6c46599b160dca7db8d1b6b44f130f404db9274",
+  "source_sha256": {
+    "hardware_circuits.py": "a9e00b475e528fafc4cd7a4b57467a3bc5949629a3e819e6f1435d8dc3f5526c",
+    "order_finding.py": "3b24b985a3303d51c37f5a9537d861ce882ff92a658a1588c20f1448e976396d",
+    "verification.py": "4166458f7a622e3909f81aea66ea83b68de47aad4b318acb261d9421f035bda7",
+    "hardware.py": "609d573feed6a6ab7457d8a667c1ce3b03d1eadf3f454488f6145abdf01df5f9"
+  },
+  "versions": {
+    "qiskit": "2.6.2",
+    "qiskit-ibm-runtime": "0.52.1",
+    "numpy": "2.5.5"
+  },
+  "verification_rule": "valid factors AND TVD(ideal) < TVD(uniform) AND uniform-null p < 0.01",
+  "counts_policy": "raw counts; no postselection, readout correction, or outcome filtering",
+  "experiments": [
+    {
+      "modulus": 15,
+      "base": 2,
+      "counting_qubits": 4,
+      "logical_qubits": 8,
+      "implementation": "compiled_binary",
+      "selected": {
+        "seed_transpiler": 17,
+        "active_physical_qubits": [
+          123,
+          136,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145
+        ],
+        "two_qubit_gates": 49,
+        "two_qubit_depth": 39,
+        "depth": 121,
+        "operations": {
+          "sx": 96,
+          "rz": 74,
+          "cz": 49,
+          "x": 5,
+          "measure": 4
+        },
+        "calibration_error_cost": 0.14157158912527298,
+        "instructions_without_error_data": 0,
+        "initial_layout": [
+          141,
+          143,
+          123,
+          136,
+          140,
+          144,
+          142,
+          145
+        ],
+        "final_layout": [
+          142,
+          123,
+          143,
+          136,
+          141,
+          144,
+          140,
+          145
+        ]
+      },
+      "candidates": [
+        {
+          "seed_transpiler": 7,
+          "active_physical_qubits": [
+            122,
+            123,
+            136,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "two_qubit_gates": 47,
+          "two_qubit_depth": 37,
+          "depth": 118,
+          "operations": {
+            "sx": 91,
+            "rz": 80,
+            "cz": 47,
+            "x": 7,
+            "measure": 4
+          },
+          "calibration_error_cost": 0.14180924487479807,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            143,
+            136,
+            122,
+            123,
+            142,
+            144,
+            141,
+            145
+          ],
+          "final_layout": [
+            143,
+            122,
+            136,
+            123,
+            142,
+            144,
+            141,
+            145
+          ]
+        },
+        {
+          "seed_transpiler": 17,
+          "active_physical_qubits": [
+            123,
+            136,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "two_qubit_gates": 49,
+          "two_qubit_depth": 39,
+          "depth": 121,
+          "operations": {
+            "sx": 96,
+            "rz": 74,
+            "cz": 49,
+            "x": 5,
+            "measure": 4
+          },
+          "calibration_error_cost": 0.14157158912527298,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            141,
+            143,
+            123,
+            136,
+            140,
+            144,
+            142,
+            145
+          ],
+          "final_layout": [
+            142,
+            123,
+            143,
+            136,
+            141,
+            144,
+            140,
+            145
+          ]
+        },
+        {
+          "seed_transpiler": 37,
+          "active_physical_qubits": [
+            101,
+            116,
+            121,
+            122,
+            123,
+            124,
+            136,
+            143
+          ],
+          "two_qubit_gates": 52,
+          "two_qubit_depth": 38,
+          "depth": 120,
+          "operations": {
+            "sx": 98,
+            "rz": 80,
+            "cz": 52,
+            "x": 5,
+            "measure": 4
+          },
+          "calibration_error_cost": 0.15589992355090587,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            121,
+            122,
+            124,
+            136,
+            116,
+            123,
+            101,
+            143
+          ],
+          "final_layout": [
+            121,
+            124,
+            122,
+            123,
+            116,
+            136,
+            101,
+            143
+          ]
+        },
+        {
+          "seed_transpiler": 73,
+          "active_physical_qubits": [
+            122,
+            123,
+            136,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "two_qubit_gates": 51,
+          "two_qubit_depth": 37,
+          "depth": 122,
+          "operations": {
+            "sx": 96,
+            "rz": 78,
+            "cz": 51,
+            "x": 7,
+            "measure": 4
+          },
+          "calibration_error_cost": 0.152071183291787,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            143,
+            136,
+            122,
+            123,
+            142,
+            144,
+            141,
+            145
+          ],
+          "final_layout": [
+            143,
+            136,
+            123,
+            122,
+            142,
+            144,
+            141,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "modulus": 21,
+      "base": 2,
+      "counting_qubits": 4,
+      "logical_qubits": 7,
+      "implementation": "compiled_encoded_orbit",
+      "selected": {
+        "seed_transpiler": 17,
+        "active_physical_qubits": [
+          2,
+          3,
+          4,
+          16,
+          22,
+          23,
+          24
+        ],
+        "two_qubit_gates": 51,
+        "two_qubit_depth": 47,
+        "depth": 156,
+        "operations": {
+          "sx": 109,
+          "rz": 74,
+          "cz": 51,
+          "measure": 4,
+          "x": 1
+        },
+        "calibration_error_cost": 0.14268313857022624,
+        "instructions_without_error_data": 0,
+        "initial_layout": [
+          3,
+          23,
+          22,
+          24,
+          4,
+          16,
+          2
+        ],
+        "final_layout": [
+          24,
+          22,
+          23,
+          16,
+          4,
+          2,
+          3
+        ]
+      },
+      "candidates": [
+        {
+          "seed_transpiler": 7,
+          "active_physical_qubits": [
+            1,
+            2,
+            3,
+            16,
+            22,
+            23,
+            24
+          ],
+          "two_qubit_gates": 54,
+          "two_qubit_depth": 49,
+          "depth": 167,
+          "operations": {
+            "sx": 116,
+            "rz": 75,
+            "cz": 54,
+            "measure": 4,
+            "x": 1
+          },
+          "calibration_error_cost": 0.15063967747766613,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            3,
+            23,
+            22,
+            24,
+            2,
+            16,
+            1
+          ],
+          "final_layout": [
+            24,
+            22,
+            23,
+            16,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "seed_transpiler": 17,
+          "active_physical_qubits": [
+            2,
+            3,
+            4,
+            16,
+            22,
+            23,
+            24
+          ],
+          "two_qubit_gates": 51,
+          "two_qubit_depth": 47,
+          "depth": 156,
+          "operations": {
+            "sx": 109,
+            "rz": 74,
+            "cz": 51,
+            "measure": 4,
+            "x": 1
+          },
+          "calibration_error_cost": 0.14268313857022624,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            3,
+            23,
+            22,
+            24,
+            4,
+            16,
+            2
+          ],
+          "final_layout": [
+            24,
+            22,
+            23,
+            16,
+            4,
+            2,
+            3
+          ]
+        },
+        {
+          "seed_transpiler": 37,
+          "active_physical_qubits": [
+            136,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146
+          ],
+          "two_qubit_gates": 57,
+          "two_qubit_depth": 48,
+          "depth": 156,
+          "operations": {
+            "sx": 116,
+            "rz": 86,
+            "cz": 57,
+            "x": 5,
+            "measure": 4
+          },
+          "calibration_error_cost": 0.17157574163174547,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            143,
+            144,
+            145,
+            146,
+            142,
+            141,
+            136
+          ],
+          "final_layout": [
+            143,
+            146,
+            144,
+            145,
+            141,
+            136,
+            142
+          ]
+        },
+        {
+          "seed_transpiler": 73,
+          "active_physical_qubits": [
+            3,
+            16,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "two_qubit_gates": 56,
+          "two_qubit_depth": 49,
+          "depth": 168,
+          "operations": {
+            "sx": 118,
+            "rz": 82,
+            "cz": 56,
+            "measure": 4,
+            "x": 1
+          },
+          "calibration_error_cost": 0.15866277035950405,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            24,
+            21,
+            16,
+            3,
+            25,
+            23,
+            22
+          ],
+          "final_layout": [
+            22,
+            16,
+            24,
+            23,
+            25,
+            21,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "modulus": 21,
+      "base": 2,
+      "counting_qubits": 5,
+      "logical_qubits": 8,
+      "implementation": "compiled_encoded_orbit",
+      "selected": {
+        "seed_transpiler": 7,
+        "active_physical_qubits": [
+          2,
+          3,
+          4,
+          16,
+          21,
+          22,
+          23,
+          24
+        ],
+        "two_qubit_gates": 79,
+        "two_qubit_depth": 66,
+        "depth": 204,
+        "operations": {
+          "sx": 161,
+          "rz": 108,
+          "cz": 79,
+          "measure": 5,
+          "x": 2
+        },
+        "calibration_error_cost": 0.22906258350430442,
+        "instructions_without_error_data": 0,
+        "initial_layout": [
+          22,
+          16,
+          3,
+          4,
+          2,
+          21,
+          24,
+          23
+        ],
+        "final_layout": [
+          23,
+          2,
+          4,
+          16,
+          3,
+          21,
+          24,
+          22
+        ]
+      },
+      "candidates": [
+        {
+          "seed_transpiler": 7,
+          "active_physical_qubits": [
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23,
+            24
+          ],
+          "two_qubit_gates": 79,
+          "two_qubit_depth": 66,
+          "depth": 204,
+          "operations": {
+            "sx": 161,
+            "rz": 108,
+            "cz": 79,
+            "measure": 5,
+            "x": 2
+          },
+          "calibration_error_cost": 0.22906258350430442,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            22,
+            16,
+            3,
+            4,
+            2,
+            21,
+            24,
+            23
+          ],
+          "final_layout": [
+            23,
+            2,
+            4,
+            16,
+            3,
+            21,
+            24,
+            22
+          ]
+        },
+        {
+          "seed_transpiler": 17,
+          "active_physical_qubits": [
+            2,
+            3,
+            4,
+            16,
+            20,
+            21,
+            22,
+            23
+          ],
+          "two_qubit_gates": 80,
+          "two_qubit_depth": 64,
+          "depth": 202,
+          "operations": {
+            "sx": 169,
+            "rz": 110,
+            "cz": 80,
+            "measure": 5
+          },
+          "calibration_error_cost": 0.2312046916298606,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            21,
+            16,
+            3,
+            4,
+            2,
+            20,
+            23,
+            22
+          ],
+          "final_layout": [
+            23,
+            2,
+            4,
+            16,
+            3,
+            20,
+            22,
+            21
+          ]
+        },
+        {
+          "seed_transpiler": 37,
+          "active_physical_qubits": [
+            2,
+            3,
+            4,
+            16,
+            20,
+            21,
+            22,
+            23
+          ],
+          "two_qubit_gates": 80,
+          "two_qubit_depth": 64,
+          "depth": 202,
+          "operations": {
+            "sx": 169,
+            "rz": 110,
+            "cz": 80,
+            "measure": 5
+          },
+          "calibration_error_cost": 0.2312046916298606,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            21,
+            16,
+            3,
+            4,
+            2,
+            20,
+            23,
+            22
+          ],
+          "final_layout": [
+            23,
+            2,
+            4,
+            16,
+            3,
+            20,
+            22,
+            21
+          ]
+        },
+        {
+          "seed_transpiler": 73,
+          "active_physical_qubits": [
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23,
+            24
+          ],
+          "two_qubit_gates": 79,
+          "two_qubit_depth": 65,
+          "depth": 205,
+          "operations": {
+            "sx": 160,
+            "rz": 108,
+            "cz": 79,
+            "measure": 5,
+            "x": 2
+          },
+          "calibration_error_cost": 0.22943105684815493,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            23,
+            16,
+            3,
+            4,
+            2,
+            22,
+            24,
+            21
+          ],
+          "final_layout": [
+            23,
+            2,
+            4,
+            16,
+            3,
+            21,
+            24,
+            22
+          ]
+        }
+      ]
+    }
+  ]
+}
