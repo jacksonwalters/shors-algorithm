@@ -1,0 +1,66 @@
+{
+  "kind": "ideal local simulation of general ripple-carry arithmetic",
+  "created_at": "2026-11-16T23:46:09.293015+00:00",
+  "seed": 7,
+  "result": {
+    "modulus": 15,
+    "base": 2,
+    "counting_qubits": 8,
+    "work_qubits": 4,
+    "scratch_qubits": 12,
+    "method": "aer-mps",
+    "counts": {
+      "00000000": 496,
+      "10000000": 508,
+      "01000000": 517,
+      "11000000": 527
+    },
+    "periods": [
+      4
+    ],
+    "factors": [
+      3,
+      5
+    ],
+    "elapsed_seconds": 1.2645263329977752
+  },
+  "versions": {
+    "qiskit": "2.6.2",
+    "numpy": "2.5.5",
+    "qiskit-aer": "0.18.2"
+  },
+  "source_sha256": {
+    "arithmetic.py": "a822db213218799ee7a2d1cdee85c08d7a9d453efad436ba33d9799de36e3be3",
+    "arithmetic_order_finding.py": "a4d0d59a9d34764f4255dc504d15ab35d2dcbedc906e21f1ab1234f0e80e5136",
+    "order_finding.py": "3b24b985a3303d51c37f5a9537d861ce882ff92a658a1588c20f1448e976396d"
+  },
+  "mps_settings": {
+    "truncation_threshold": 1e-16,
+    "maximum_bond_dimension": null
+  },
+  "resources": {
+    "logical_qubits": 24,
+    "primitive_operations": {
+      "ccx": 848,
+      "cx": 684,
+      "x": 657,
+      "cp": 28,
+      "h": 16,
+      "cswap": 8,
+      "measure": 8,
+      "swap": 4
+    },
+    "all_to_all": {
+      "basis": [
+        "u",
+        "cx"
+      ],
+      "optimization_level": 1,
+      "seed_transpiler": 7,
+      "cx_gates": 5904,
+      "two_qubit_depth": 4742,
+      "depth": 8026
+    },
+    "compilation_seconds": 0.10454866600048263
+  }
+}

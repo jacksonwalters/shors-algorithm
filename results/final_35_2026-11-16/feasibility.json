@@ -1,0 +1,4460 @@
+{
+  "kind": "bounded general-arithmetic feasibility assessment",
+  "created_at": "2026-11-17T00:09:30.141164+00:00",
+  "modulus": 35,
+  "base": 2,
+  "backend": "ibm_fez",
+  "calibration_time": "2026-11-13 11:27:59-05:00",
+  "hardware_job_submitted": false,
+  "versions": {
+    "qiskit": "2.6.2",
+    "qiskit-ibm-runtime": "0.52.1"
+  },
+  "source_sha256": {
+    "arithmetic.py": "f5d963e49fffdb928e002227f42c55514929ee9a71c2002060b0422020bc780e",
+    "arithmetic_order_finding.py": "c00a5e4870cf019bfa017e8fcb6abf6f3d35c8e6ec67fd05a0aabcfebdfd6ca3",
+    "hardware.py": "8426b005dbb76e7b4fad56ed5597944b6b541a88f9847630cdfe5bcc544eea7d",
+    "feasibility.py": "9f720e263aafce45f778dc9ec94bd76357d710f996fc84a93aa991d37dd89534"
+  },
+  "screening_limits": {
+    "two_qubit_gates": 200,
+    "two_qubit_depth": 200,
+    "description": "same conservative circuit budget as the previous 15/21 demonstrations; not a physical impossibility threshold"
+  },
+  "experiments": [
+    {
+      "counting_qubits": 6,
+      "logical_qubits": 27,
+      "selected": {
+        "optimization_level": 3,
+        "seed_transpiler": 7,
+        "compilation_seconds": 2.627903041000536,
+        "active_physical_qubits": [
+          87,
+          88,
+          89,
+          90,
+          91,
+          97,
+          98,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          117,
+          118,
+          119,
+          123,
+          124,
+          125,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ],
+        "two_qubit_gates": 60292,
+        "two_qubit_depth": 41761,
+        "depth": 124083,
+        "operations": {
+          "sx": 115728,
+          "cz": 60292,
+          "rz": 59404,
+          "x": 2323,
+          "measure": 6
+        },
+        "calibration_error_cost": 177.47100535945853,
+        "instructions_without_error_data": 0,
+        "initial_layout": [
+          111,
+          90,
+          123,
+          106,
+          134,
+          135,
+          98,
+          97,
+          91,
+          114,
+          87,
+          88,
+          132,
+          129,
+          133,
+          112,
+          109,
+          107,
+          118,
+          131,
+          130,
+          119,
+          113,
+          110,
+          108,
+          128,
+          89
+        ],
+        "final_layout": [
+          88,
+          97,
+          107,
+          110,
+          108,
+          109,
+          133,
+          134,
+          131,
+          135,
+          89,
+          106,
+          87,
+          111,
+          112,
+          119,
+          91,
+          129,
+          130,
+          118,
+          98,
+          113,
+          114,
+          90,
+          128,
+          105,
+          132
+        ],
+        "diagnostics": {
+          "interpretation": "calibrated screening heuristics, not a noisy simulation or success probability",
+          "gate_duration_critical_path_seconds": 0.004024568000002444,
+          "median_active_t1_seconds": 0.00012688112757951742,
+          "median_active_t2_seconds": 8.984018253952224e-05,
+          "duration_over_median_t1": 31.719201088280172,
+          "duration_over_median_t2": 44.796970422805714,
+          "usage_weighted_two_qubit_average_error": 0.002343670938269912,
+          "log10_gate_fidelity_product_heuristic": -77.07467832543526,
+          "instruction_calibrations": [
+            {
+              "instruction": "sx",
+              "qubits": [
+                87
+              ],
+              "occurrences": 307,
+              "average_error": 0.00025423475805003067,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                88
+              ],
+              "occurrences": 278,
+              "average_error": 0.000398001215420241,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                89
+              ],
+              "occurrences": 270,
+              "average_error": 0.0002688002151095979,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                89
+              ],
+              "occurrences": 95,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                90
+              ],
+              "occurrences": 175,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                90
+              ],
+              "occurrences": 425,
+              "average_error": 0.00027492871807206255,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                90,
+                89
+              ],
+              "occurrences": 84,
+              "average_error": 0.0035961871134968237,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                91
+              ],
+              "occurrences": 833,
+              "average_error": 0.00019233311538080212,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                97
+              ],
+              "occurrences": 911,
+              "average_error": 0.00040358825028287675,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                98
+              ],
+              "occurrences": 1191,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                98
+              ],
+              "occurrences": 2389,
+              "average_error": 0.00023508540675323285,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                105
+              ],
+              "occurrences": 15,
+              "average_error": 0.0003090626522905555,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                106
+              ],
+              "occurrences": 27,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                106
+              ],
+              "occurrences": 68,
+              "average_error": 0.00025555185124532544,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                107
+              ],
+              "occurrences": 2154,
+              "average_error": 0.0002827531743799268,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                107,
+                97
+              ],
+              "occurrences": 415,
+              "average_error": 0.0017453651703253359,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                107
+              ],
+              "occurrences": 1295,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                107
+              ],
+              "occurrences": 57,
+              "average_error": 0.0002827531743799268,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                108
+              ],
+              "occurrences": 1547,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                108
+              ],
+              "occurrences": 3173,
+              "average_error": 0.0004425103740204599,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                108,
+                107
+              ],
+              "occurrences": 741,
+              "average_error": 0.002640791186585306,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                109
+              ],
+              "occurrences": 11515,
+              "average_error": 0.00021322037903143758,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                110
+              ],
+              "occurrences": 3742,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                110
+              ],
+              "occurrences": 8011,
+              "average_error": 0.0002287454651953718,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                111
+              ],
+              "occurrences": 5712,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                111
+              ],
+              "occurrences": 10424,
+              "average_error": 0.00019346316260400353,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                111,
+                98
+              ],
+              "occurrences": 1200,
+              "average_error": 0.0025828625097243374,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                91,
+                98
+              ],
+              "occurrences": 248,
+              "average_error": 0.002349597086851146,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                91,
+                90
+              ],
+              "occurrences": 153,
+              "average_error": 0.003967428043858218,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                89,
+                90
+              ],
+              "occurrences": 76,
+              "average_error": 0.0035961871134968237,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                91
+              ],
+              "occurrences": 350,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                98,
+                91
+              ],
+              "occurrences": 370,
+              "average_error": 0.002349597086851146,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                110,
+                111
+              ],
+              "occurrences": 2099,
+              "average_error": 0.0025665639663255135,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                109,
+                110
+              ],
+              "occurrences": 2174,
+              "average_error": 0.002469689882356546,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                109,
+                108
+              ],
+              "occurrences": 1272,
+              "average_error": 0.002736101039421568,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                112
+              ],
+              "occurrences": 7528,
+              "average_error": 0.00027415508087406785,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                112,
+                111
+              ],
+              "occurrences": 2064,
+              "average_error": 0.0019682375379218853,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                113
+              ],
+              "occurrences": 4983,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                113
+              ],
+              "occurrences": 9065,
+              "average_error": 0.0002677046275200252,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                113,
+                112
+              ],
+              "occurrences": 2050,
+              "average_error": 0.0023101865781242625,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                114
+              ],
+              "occurrences": 1247,
+              "average_error": 0.0003153055290953451,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                117
+              ],
+              "occurrences": 6,
+              "average_error": 0.00026786459775614236,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                118
+              ],
+              "occurrences": 8770,
+              "average_error": 0.0003250051442537063,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                118
+              ],
+              "occurrences": 4147,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                119
+              ],
+              "occurrences": 3123,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                113,
+                119
+              ],
+              "occurrences": 1780,
+              "average_error": 0.0024536484441143036,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                119
+              ],
+              "occurrences": 6267,
+              "average_error": 0.0007500591437553264,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                123
+              ],
+              "occurrences": 3,
+              "average_error": 0.00018909694036711516,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                123
+              ],
+              "occurrences": 2,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                124
+              ],
+              "occurrences": 3,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                124
+              ],
+              "occurrences": 6,
+              "average_error": 0.00025599512587690977,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                124,
+                123
+              ],
+              "occurrences": 3,
+              "average_error": 0.002686158046128845,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                125
+              ],
+              "occurrences": 6,
+              "average_error": 0.00020032758185832656,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                125,
+                124
+              ],
+              "occurrences": 3,
+              "average_error": 0.002180646314514534,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                117,
+                125
+              ],
+              "occurrences": 3,
+              "average_error": 0.001918736503924906,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                105,
+                117
+              ],
+              "occurrences": 3,
+              "average_error": 0.0018432174381279032,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                106,
+                105
+              ],
+              "occurrences": 12,
+              "average_error": 0.0020119619946284417,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                128
+              ],
+              "occurrences": 872,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                128
+              ],
+              "occurrences": 1883,
+              "average_error": 0.00018981941099543198,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                129
+              ],
+              "occurrences": 192,
+              "average_error": 0.00024123347660073987,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                130
+              ],
+              "occurrences": 3642,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                131
+              ],
+              "occurrences": 3589,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                131
+              ],
+              "occurrences": 6990,
+              "average_error": 9.124505447301552e-05,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                132,
+                131
+              ],
+              "occurrences": 1743,
+              "average_error": 0.0012322352841037942,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                131,
+                130
+              ],
+              "occurrences": 1834,
+              "average_error": 0.001694355150017618,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                130
+              ],
+              "occurrences": 7432,
+              "average_error": 0.0007227359606208043,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                129,
+                130
+              ],
+              "occurrences": 2070,
+              "average_error": 0.0023668299890426403,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                130,
+                131
+              ],
+              "occurrences": 1857,
+              "average_error": 0.001694355150017618,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                129
+              ],
+              "occurrences": 6458,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                129
+              ],
+              "occurrences": 11726,
+              "average_error": 0.00024123347660073987,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                130,
+                129
+              ],
+              "occurrences": 2149,
+              "average_error": 0.0023668299890426403,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                132
+              ],
+              "occurrences": 3571,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                132
+              ],
+              "occurrences": 6512,
+              "average_error": 0.00016568814031492083,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                133,
+                119
+              ],
+              "occurrences": 1511,
+              "average_error": 0.0028741688127091047,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                112
+              ],
+              "occurrences": 3693,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                111,
+                112
+              ],
+              "occurrences": 2012,
+              "average_error": 0.0019682375379218853,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                98,
+                111
+              ],
+              "occurrences": 905,
+              "average_error": 0.0025828625097243374,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                98
+              ],
+              "occurrences": 71,
+              "average_error": 0.00023508540675323285,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                108,
+                109
+              ],
+              "occurrences": 1055,
+              "average_error": 0.002736101039421568,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                97,
+                107
+              ],
+              "occurrences": 354,
+              "average_error": 0.0017453651703253359,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                97
+              ],
+              "occurrences": 443,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                108
+              ],
+              "occurrences": 55,
+              "average_error": 0.0004425103740204599,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                109
+              ],
+              "occurrences": 5935,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                109,
+                118
+              ],
+              "occurrences": 2546,
+              "average_error": 0.002396172549948755,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                113
+              ],
+              "occurrences": 185,
+              "average_error": 0.0002677046275200252,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                112,
+                113
+              ],
+              "occurrences": 1953,
+              "average_error": 0.0023101865781242625,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                109
+              ],
+              "occurrences": 353,
+              "average_error": 0.00021322037903143758,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                107,
+                108
+              ],
+              "occurrences": 478,
+              "average_error": 0.002640791186585306,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                110,
+                109
+              ],
+              "occurrences": 2370,
+              "average_error": 0.002469689882356546,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                111,
+                110
+              ],
+              "occurrences": 2083,
+              "average_error": 0.0025665639663255135,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                110
+              ],
+              "occurrences": 113,
+              "average_error": 0.0002287454651953718,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                133
+              ],
+              "occurrences": 3807,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                133
+              ],
+              "occurrences": 6956,
+              "average_error": 0.00036698064115752495,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                119,
+                113
+              ],
+              "occurrences": 1632,
+              "average_error": 0.0024536484441143036,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                132,
+                133
+              ],
+              "occurrences": 1626,
+              "average_error": 0.0025598220788859427,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                119,
+                133
+              ],
+              "occurrences": 1688,
+              "average_error": 0.0028741688127091047,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                132
+              ],
+              "occurrences": 117,
+              "average_error": 0.00016568814031492083,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                97
+              ],
+              "occurrences": 6,
+              "average_error": 0.00040358825028287675,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                118,
+                109
+              ],
+              "occurrences": 2241,
+              "average_error": 0.002396172549948755,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                87,
+                97
+              ],
+              "occurrences": 82,
+              "average_error": 0.0043847815740659934,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                88,
+                87
+              ],
+              "occurrences": 63,
+              "average_error": 0.004018915501156961,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                112
+              ],
+              "occurrences": 134,
+              "average_error": 0.00027415508087406785,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                129,
+                118
+              ],
+              "occurrences": 2030,
+              "average_error": 0.002048490802893821,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                129,
+                128
+              ],
+              "occurrences": 1546,
+              "average_error": 0.003239440205927979,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                133,
+                132
+              ],
+              "occurrences": 1599,
+              "average_error": 0.0025598220788859427,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                133
+              ],
+              "occurrences": 166,
+              "average_error": 0.00036698064115752495,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                131,
+                132
+              ],
+              "occurrences": 1739,
+              "average_error": 0.0012322352841037942,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                131
+              ],
+              "occurrences": 158,
+              "average_error": 9.124505447301552e-05,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                128,
+                129
+              ],
+              "occurrences": 863,
+              "average_error": 0.003239440205927979,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                118,
+                129
+              ],
+              "occurrences": 2824,
+              "average_error": 0.002048490802893821,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                118
+              ],
+              "occurrences": 106,
+              "average_error": 0.0003250051442537063,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                119
+              ],
+              "occurrences": 78,
+              "average_error": 0.0007500591437553264,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                90,
+                91
+              ],
+              "occurrences": 103,
+              "average_error": 0.003967428043858218,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                88,
+                89
+              ],
+              "occurrences": 65,
+              "average_error": 0.0025580998404977073,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                88
+              ],
+              "occurrences": 89,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                89,
+                88
+              ],
+              "occurrences": 65,
+              "average_error": 0.0025580998404977073,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                111
+              ],
+              "occurrences": 236,
+              "average_error": 0.00019346316260400353,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                113,
+                114
+              ],
+              "occurrences": 1034,
+              "average_error": 0.002171259520081875,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                114,
+                113
+              ],
+              "occurrences": 507,
+              "average_error": 0.002171259520081875,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                114
+              ],
+              "occurrences": 564,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                114
+              ],
+              "occurrences": 30,
+              "average_error": 0.0003153055290953451,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                130
+              ],
+              "occurrences": 117,
+              "average_error": 0.0007227359606208043,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                87,
+                88
+              ],
+              "occurrences": 84,
+              "average_error": 0.004018915501156961,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                97,
+                87
+              ],
+              "occurrences": 103,
+              "average_error": 0.0043847815740659934,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                87
+              ],
+              "occurrences": 95,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                128
+              ],
+              "occurrences": 92,
+              "average_error": 0.00018981941099543198,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                91
+              ],
+              "occurrences": 22,
+              "average_error": 0.00019233311538080212,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                87
+              ],
+              "occurrences": 4,
+              "average_error": 0.00025423475805003067,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                106,
+                107
+              ],
+              "occurrences": 20,
+              "average_error": 0.0016318749542834354,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                107,
+                106
+              ],
+              "occurrences": 48,
+              "average_error": 0.0016318749542834354,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                106
+              ],
+              "occurrences": 2,
+              "average_error": 0.00025555185124532544,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                134
+              ],
+              "occurrences": 535,
+              "average_error": 0.0003793326116995199,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                134
+              ],
+              "occurrences": 252,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                133,
+                134
+              ],
+              "occurrences": 413,
+              "average_error": 0.0028513399799312,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                134,
+                133
+              ],
+              "occurrences": 223,
+              "average_error": 0.0028513399799312,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                134
+              ],
+              "occurrences": 27,
+              "average_error": 0.0003793326116995199,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                89
+              ],
+              "occurrences": 2,
+              "average_error": 0.0002688002151095979,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                135
+              ],
+              "occurrences": 23,
+              "average_error": 0.00022908958000051626,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                135
+              ],
+              "occurrences": 2,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                134,
+                135
+              ],
+              "occurrences": 24,
+              "average_error": 0.001919221573810248,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                88
+              ],
+              "occurrences": 1,
+              "average_error": 0.0087890625,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                97
+              ],
+              "occurrences": 1,
+              "average_error": 0.01025390625,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                107
+              ],
+              "occurrences": 1,
+              "average_error": 0.0107421875,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                110
+              ],
+              "occurrences": 1,
+              "average_error": 0.00830078125,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                108
+              ],
+              "occurrences": 1,
+              "average_error": 0.00537109375,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                109
+              ],
+              "occurrences": 1,
+              "average_error": 0.00634765625,
+              "duration_seconds": 1.66e-06
+            }
+          ],
+          "active_qubit_coherence": [
+            {
+              "qubit": 87,
+              "t1_seconds": 0.00018428799116922012,
+              "t2_seconds": 0.0002633576618480504
+            },
+            {
+              "qubit": 88,
+              "t1_seconds": 0.00010898107093692224,
+              "t2_seconds": 0.0001450229527640838
+            },
+            {
+              "qubit": 89,
+              "t1_seconds": 0.00012129999079472492,
+              "t2_seconds": 5.151988492043215e-05
+            },
+            {
+              "qubit": 90,
+              "t1_seconds": 0.00010918168913713006,
+              "t2_seconds": 0.0001172254886071333
+            },
+            {
+              "qubit": 91,
+              "t1_seconds": 0.00018438543120198936,
+              "t2_seconds": 2.2251777400770376e-05
+            },
+            {
+              "qubit": 97,
+              "t1_seconds": 0.00010688550841001197,
+              "t2_seconds": 0.00012385772176378503
+            },
+            {
+              "qubit": 98,
+              "t1_seconds": 0.00012688112757951742,
+              "t2_seconds": 1.8553101599412267e-05
+            },
+            {
+              "qubit": 105,
+              "t1_seconds": 0.0001834409966325076,
+              "t2_seconds": 0.00016860744642944688
+            },
+            {
+              "qubit": 106,
+              "t1_seconds": 9.594471659202087e-05,
+              "t2_seconds": 0.00011328734922008234
+            },
+            {
+              "qubit": 107,
+              "t1_seconds": 7.889734999021742e-05,
+              "t2_seconds": 1.8165669516894073e-05
+            },
+            {
+              "qubit": 108,
+              "t1_seconds": 4.5675281060234174e-05,
+              "t2_seconds": 5.232075039030631e-05
+            },
+            {
+              "qubit": 109,
+              "t1_seconds": 0.0001755029435625249,
+              "t2_seconds": 4.5187252719462076e-05
+            },
+            {
+              "qubit": 110,
+              "t1_seconds": 0.00012147196549304695,
+              "t2_seconds": 8.984018253952224e-05
+            },
+            {
+              "qubit": 111,
+              "t1_seconds": 0.00015470443059790326,
+              "t2_seconds": 9.287640185792282e-05
+            },
+            {
+              "qubit": 112,
+              "t1_seconds": 0.0001560681233867919,
+              "t2_seconds": 0.00013529004630894955
+            },
+            {
+              "qubit": 113,
+              "t1_seconds": 0.0002088914823703864,
+              "t2_seconds": 5.3024638438367934e-05
+            },
+            {
+              "qubit": 114,
+              "t1_seconds": 9.257385873740925e-05,
+              "t2_seconds": 8.087152686139036e-05
+            },
+            {
+              "qubit": 117,
+              "t1_seconds": 0.00014926095883582938,
+              "t2_seconds": 0.00016825133725958862
+            },
+            {
+              "qubit": 118,
+              "t1_seconds": 7.609729070772188e-05,
+              "t2_seconds": 4.345196797826122e-05
+            },
+            {
+              "qubit": 119,
+              "t1_seconds": 0.00011111603784913291,
+              "t2_seconds": 0.00013642498452261597
+            },
+            {
+              "qubit": 123,
+              "t1_seconds": 0.00016485525895782542,
+              "t2_seconds": 0.0001298869461362048
+            },
+            {
+              "qubit": 124,
+              "t1_seconds": 0.00014061697885506827,
+              "t2_seconds": 5.219040340088455e-05
+            },
+            {
+              "qubit": 125,
+              "t1_seconds": 0.0001278952582603255,
+              "t2_seconds": 5.256298546289752e-05
+            },
+            {
+              "qubit": 128,
+              "t1_seconds": 8.898554404015615e-05,
+              "t2_seconds": 4.713215807948144e-05
+            },
+            {
+              "qubit": 129,
+              "t1_seconds": 0.00010941632506708154,
+              "t2_seconds": 5.7257921954522794e-05
+            },
+            {
+              "qubit": 130,
+              "t1_seconds": 0.00017078640567698354,
+              "t2_seconds": 0.0001637131226694943
+            },
+            {
+              "qubit": 131,
+              "t1_seconds": 0.0001890988933383647,
+              "t2_seconds": 0.000133386449845086
+            },
+            {
+              "qubit": 132,
+              "t1_seconds": 0.0001116993664721105,
+              "t2_seconds": 0.00014369151305652743
+            },
+            {
+              "qubit": 133,
+              "t1_seconds": 0.00015205308805842874,
+              "t2_seconds": 4.3143912347131556e-05
+            },
+            {
+              "qubit": 134,
+              "t1_seconds": 0.00015975785556815927,
+              "t2_seconds": 3.3855682151500116e-05
+            },
+            {
+              "qubit": 135,
+              "t1_seconds": 0.00011311404553654833,
+              "t2_seconds": 0.00012913230021205474
+            }
+          ]
+        }
+      },
+      "candidates": [
+        {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "compilation_seconds": 1.9998264999994717,
+          "active_physical_qubits": [
+            78,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            97,
+            98,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            117,
+            118,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130
+          ],
+          "two_qubit_gates": 72342,
+          "two_qubit_depth": 50568,
+          "depth": 159275,
+          "operations": {
+            "sx": 131357,
+            "rz": 84226,
+            "cz": 72342,
+            "x": 31,
+            "measure": 6
+          },
+          "calibration_error_cost": 239.8421962846647,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            110,
+            127,
+            112,
+            104,
+            117,
+            78,
+            109,
+            98,
+            128,
+            130,
+            129,
+            125,
+            93,
+            90,
+            111,
+            107,
+            105,
+            87,
+            88,
+            92,
+            91,
+            118,
+            108,
+            106,
+            97,
+            89,
+            126
+          ],
+          "final_layout": [
+            109,
+            130,
+            127,
+            118,
+            128,
+            129,
+            108,
+            98,
+            126,
+            88,
+            78,
+            104,
+            87,
+            106,
+            117,
+            107,
+            91,
+            92,
+            90,
+            97,
+            105,
+            125,
+            111,
+            112,
+            93,
+            89,
+            110
+          ]
+        },
+        {
+          "optimization_level": 3,
+          "seed_transpiler": 7,
+          "compilation_seconds": 2.627903041000536,
+          "active_physical_qubits": [
+            87,
+            88,
+            89,
+            90,
+            91,
+            97,
+            98,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            117,
+            118,
+            119,
+            123,
+            124,
+            125,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135
+          ],
+          "two_qubit_gates": 60292,
+          "two_qubit_depth": 41761,
+          "depth": 124083,
+          "operations": {
+            "sx": 115728,
+            "cz": 60292,
+            "rz": 59404,
+            "x": 2323,
+            "measure": 6
+          },
+          "calibration_error_cost": 177.47100535945853,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            111,
+            90,
+            123,
+            106,
+            134,
+            135,
+            98,
+            97,
+            91,
+            114,
+            87,
+            88,
+            132,
+            129,
+            133,
+            112,
+            109,
+            107,
+            118,
+            131,
+            130,
+            119,
+            113,
+            110,
+            108,
+            128,
+            89
+          ],
+          "final_layout": [
+            88,
+            97,
+            107,
+            110,
+            108,
+            109,
+            133,
+            134,
+            131,
+            135,
+            89,
+            106,
+            87,
+            111,
+            112,
+            119,
+            91,
+            129,
+            130,
+            118,
+            98,
+            113,
+            114,
+            90,
+            128,
+            105,
+            132
+          ]
+        },
+        {
+          "optimization_level": 3,
+          "seed_transpiler": 17,
+          "compilation_seconds": 2.5676694579997275,
+          "active_physical_qubits": [
+            65,
+            77,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            97,
+            98,
+            99,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            119,
+            133
+          ],
+          "two_qubit_gates": 61020,
+          "two_qubit_depth": 42640,
+          "depth": 125978,
+          "operations": {
+            "sx": 117448,
+            "cz": 61020,
+            "rz": 59204,
+            "x": 2209,
+            "measure": 6
+          },
+          "calibration_error_cost": 178.64785635129394,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            86,
+            107,
+            133,
+            65,
+            77,
+            85,
+            87,
+            88,
+            89,
+            90,
+            92,
+            108,
+            111,
+            119,
+            110,
+            91,
+            94,
+            99,
+            115,
+            112,
+            113,
+            109,
+            98,
+            93,
+            95,
+            114,
+            97
+          ],
+          "final_layout": [
+            65,
+            85,
+            86,
+            89,
+            87,
+            88,
+            90,
+            77,
+            97,
+            107,
+            133,
+            119,
+            111,
+            92,
+            94,
+            99,
+            113,
+            112,
+            109,
+            98,
+            93,
+            95,
+            115,
+            114,
+            110,
+            108,
+            91
+          ]
+        }
+      ],
+      "within_existing_hardware_budget": false
+    },
+    {
+      "counting_qubits": 12,
+      "logical_qubits": 33,
+      "selected": {
+        "optimization_level": 3,
+        "seed_transpiler": 7,
+        "compilation_seconds": 7.296560917002353,
+        "active_physical_qubits": [
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          97,
+          98,
+          99,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          118,
+          119,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          137,
+          138,
+          147,
+          151,
+          152
+        ],
+        "two_qubit_gates": 139161,
+        "two_qubit_depth": 96504,
+        "depth": 282817,
+        "operations": {
+          "sx": 266296,
+          "cz": 139161,
+          "rz": 132883,
+          "x": 4936,
+          "measure": 12
+        },
+        "calibration_error_cost": 418.968793844802,
+        "instructions_without_error_data": 0,
+        "initial_layout": [
+          99,
+          98,
+          138,
+          127,
+          97,
+          151,
+          152,
+          90,
+          87,
+          134,
+          88,
+          147,
+          95,
+          112,
+          108,
+          114,
+          107,
+          93,
+          132,
+          119,
+          115,
+          110,
+          118,
+          128,
+          130,
+          133,
+          113,
+          94,
+          111,
+          109,
+          129,
+          131,
+          91
+        ],
+        "final_layout": [
+          115,
+          114,
+          119,
+          113,
+          98,
+          111,
+          112,
+          108,
+          109,
+          110,
+          129,
+          118,
+          128,
+          90,
+          137,
+          89,
+          99,
+          95,
+          132,
+          92,
+          97,
+          107,
+          138,
+          131,
+          130,
+          133,
+          93,
+          87,
+          127,
+          151,
+          134,
+          152,
+          91
+        ],
+        "diagnostics": {
+          "interpretation": "calibrated screening heuristics, not a noisy simulation or success probability",
+          "gate_duration_critical_path_seconds": 0.00926707200001174,
+          "median_active_t1_seconds": 0.0001241765465362822,
+          "median_active_t2_seconds": 0.00011302788851760002,
+          "duration_over_median_t1": 74.62819879037355,
+          "duration_over_median_t2": 81.98925169312287,
+          "usage_weighted_two_qubit_average_error": 0.0024091302537460895,
+          "log10_gate_fidelity_product_heuristic": -181.95583525645858,
+          "instruction_calibrations": [
+            {
+              "instruction": "rz",
+              "qubits": [
+                87
+              ],
+              "occurrences": 27,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                87
+              ],
+              "occurrences": 123,
+              "average_error": 0.00025423475805003067,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                88
+              ],
+              "occurrences": 17,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                88
+              ],
+              "occurrences": 88,
+              "average_error": 0.000398001215420241,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                89
+              ],
+              "occurrences": 132,
+              "average_error": 0.0002688002151095979,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                90
+              ],
+              "occurrences": 113,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                90
+              ],
+              "occurrences": 279,
+              "average_error": 0.00027492871807206255,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                91
+              ],
+              "occurrences": 1605,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                92
+              ],
+              "occurrences": 681,
+              "average_error": 0.000357776197916572,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                93
+              ],
+              "occurrences": 128,
+              "average_error": 0.0004782366971368122,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                94
+              ],
+              "occurrences": 40,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                94
+              ],
+              "occurrences": 129,
+              "average_error": 0.00028429027805526835,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                95
+              ],
+              "occurrences": 125,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                95
+              ],
+              "occurrences": 235,
+              "average_error": 0.0002955249794414192,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                97
+              ],
+              "occurrences": 655,
+              "average_error": 0.00040358825028287675,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                97
+              ],
+              "occurrences": 307,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                98
+              ],
+              "occurrences": 2940,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                98
+              ],
+              "occurrences": 5859,
+              "average_error": 0.00023508540675323285,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                99
+              ],
+              "occurrences": 206,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                99
+              ],
+              "occurrences": 412,
+              "average_error": 0.00023694368347565185,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                99,
+                95
+              ],
+              "occurrences": 85,
+              "average_error": 0.0021454817602272747,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                94,
+                95
+              ],
+              "occurrences": 37,
+              "average_error": 0.0024687131028583442,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                93,
+                94
+              ],
+              "occurrences": 33,
+              "average_error": 0.0024571538073414056,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                92,
+                93
+              ],
+              "occurrences": 40,
+              "average_error": 0.0018055471538051815,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                92,
+                91
+              ],
+              "occurrences": 290,
+              "average_error": 0.002153520355254984,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                91
+              ],
+              "occurrences": 2925,
+              "average_error": 0.00019233311538080212,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                98,
+                91
+              ],
+              "occurrences": 1270,
+              "average_error": 0.002349597086851146,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                92
+              ],
+              "occurrences": 283,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                91,
+                92
+              ],
+              "occurrences": 408,
+              "average_error": 0.002153520355254984,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                93,
+                92
+              ],
+              "occurrences": 24,
+              "average_error": 0.0018055471538051815,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                94,
+                93
+              ],
+              "occurrences": 28,
+              "average_error": 0.0024571538073414056,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                107
+              ],
+              "occurrences": 3237,
+              "average_error": 0.0002827531743799268,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                107
+              ],
+              "occurrences": 1632,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                108
+              ],
+              "occurrences": 8559,
+              "average_error": 0.0004425103740204599,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                109
+              ],
+              "occurrences": 13303,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                111
+              ],
+              "occurrences": 11427,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                112
+              ],
+              "occurrences": 17646,
+              "average_error": 0.00027415508087406785,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                112
+              ],
+              "occurrences": 7871,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                113
+              ],
+              "occurrences": 23740,
+              "average_error": 0.0002677046275200252,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                113
+              ],
+              "occurrences": 12296,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                114
+              ],
+              "occurrences": 8485,
+              "average_error": 0.0003153055290953451,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                115
+              ],
+              "occurrences": 2725,
+              "average_error": 0.00022079634705926784,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                115,
+                99
+              ],
+              "occurrences": 160,
+              "average_error": 0.0016635116950129147,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                98,
+                111
+              ],
+              "occurrences": 1598,
+              "average_error": 0.0025828625097243374,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                111
+              ],
+              "occurrences": 23248,
+              "average_error": 0.00019346316260400353,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                110,
+                111
+              ],
+              "occurrences": 5337,
+              "average_error": 0.0025665639663255135,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                110
+              ],
+              "occurrences": 8337,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                110
+              ],
+              "occurrences": 18450,
+              "average_error": 0.0002287454651953718,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                98
+              ],
+              "occurrences": 127,
+              "average_error": 0.00023508540675323285,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                110,
+                109
+              ],
+              "occurrences": 4889,
+              "average_error": 0.002469689882356546,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                109
+              ],
+              "occurrences": 25487,
+              "average_error": 0.00021322037903143758,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                111,
+                98
+              ],
+              "occurrences": 2672,
+              "average_error": 0.0025828625097243374,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                114,
+                115
+              ],
+              "occurrences": 1528,
+              "average_error": 0.0020965494835747667,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                118,
+                109
+              ],
+              "occurrences": 5061,
+              "average_error": 0.002396172549948755,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                110
+              ],
+              "occurrences": 180,
+              "average_error": 0.0002287454651953718,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                118
+              ],
+              "occurrences": 8496,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                118
+              ],
+              "occurrences": 17897,
+              "average_error": 0.0003250051442537063,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                109,
+                110
+              ],
+              "occurrences": 5069,
+              "average_error": 0.002469689882356546,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                119
+              ],
+              "occurrences": 7474,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                119
+              ],
+              "occurrences": 16253,
+              "average_error": 0.0007500591437553264,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                119,
+                113
+              ],
+              "occurrences": 4880,
+              "average_error": 0.0024536484441143036,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                113
+              ],
+              "occurrences": 468,
+              "average_error": 0.0002677046275200252,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                127
+              ],
+              "occurrences": 60,
+              "average_error": 0.0003158550897890319,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                127
+              ],
+              "occurrences": 25,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                129
+              ],
+              "occurrences": 10250,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                118,
+                129
+              ],
+              "occurrences": 4419,
+              "average_error": 0.002048490802893821,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                129
+              ],
+              "occurrences": 19845,
+              "average_error": 0.00024123347660073987,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                128,
+                129
+              ],
+              "occurrences": 1078,
+              "average_error": 0.003239440205927979,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                128
+              ],
+              "occurrences": 1149,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                128
+              ],
+              "occurrences": 2222,
+              "average_error": 0.00018981941099543198,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                130
+              ],
+              "occurrences": 7502,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                130
+              ],
+              "occurrences": 15103,
+              "average_error": 0.0007227359606208043,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                129,
+                130
+              ],
+              "occurrences": 4547,
+              "average_error": 0.0023668299890426403,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                129,
+                118
+              ],
+              "occurrences": 4775,
+              "average_error": 0.002048490802893821,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                129
+              ],
+              "occurrences": 383,
+              "average_error": 0.00024123347660073987,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                109,
+                118
+              ],
+              "occurrences": 4705,
+              "average_error": 0.002396172549948755,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                109
+              ],
+              "occurrences": 451,
+              "average_error": 0.00021322037903143758,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                111,
+                110
+              ],
+              "occurrences": 4497,
+              "average_error": 0.0025665639663255135,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                111
+              ],
+              "occurrences": 589,
+              "average_error": 0.00019346316260400353,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                91,
+                98
+              ],
+              "occurrences": 803,
+              "average_error": 0.002349597086851146,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                95,
+                94
+              ],
+              "occurrences": 40,
+              "average_error": 0.0024687131028583442,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                129,
+                128
+              ],
+              "occurrences": 1672,
+              "average_error": 0.003239440205927979,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                131
+              ],
+              "occurrences": 8954,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                131
+              ],
+              "occurrences": 17140,
+              "average_error": 9.124505447301552e-05,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                133
+              ],
+              "occurrences": 8645,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                133
+              ],
+              "occurrences": 16711,
+              "average_error": 0.00036698064115752495,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                132,
+                133
+              ],
+              "occurrences": 4022,
+              "average_error": 0.0025598220788859427,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                132
+              ],
+              "occurrences": 6918,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                132
+              ],
+              "occurrences": 14442,
+              "average_error": 0.00016568814031492083,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                133,
+                119
+              ],
+              "occurrences": 4264,
+              "average_error": 0.0028741688127091047,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                113,
+                119
+              ],
+              "occurrences": 4212,
+              "average_error": 0.0024536484441143036,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                119,
+                133
+              ],
+              "occurrences": 3993,
+              "average_error": 0.0028741688127091047,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                113,
+                112
+              ],
+              "occurrences": 4275,
+              "average_error": 0.0023101865781242625,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                114,
+                113
+              ],
+              "occurrences": 2115,
+              "average_error": 0.002171259520081875,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                115,
+                114
+              ],
+              "occurrences": 1292,
+              "average_error": 0.0020965494835747667,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                95,
+                99
+              ],
+              "occurrences": 66,
+              "average_error": 0.0021454817602272747,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                115
+              ],
+              "occurrences": 1450,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                113,
+                114
+              ],
+              "occurrences": 3619,
+              "average_error": 0.002171259520081875,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                112,
+                113
+              ],
+              "occurrences": 5150,
+              "average_error": 0.0023101865781242625,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                112,
+                111
+              ],
+              "occurrences": 4697,
+              "average_error": 0.0019682375379218853,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                112
+              ],
+              "occurrences": 241,
+              "average_error": 0.00027415508087406785,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                111,
+                112
+              ],
+              "occurrences": 4972,
+              "average_error": 0.0019682375379218853,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                99,
+                115
+              ],
+              "occurrences": 82,
+              "average_error": 0.0016635116950129147,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                128
+              ],
+              "occurrences": 97,
+              "average_error": 0.00018981941099543198,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                130,
+                131
+              ],
+              "occurrences": 4274,
+              "average_error": 0.001694355150017618,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                130,
+                129
+              ],
+              "occurrences": 3656,
+              "average_error": 0.0023668299890426403,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                131,
+                132
+              ],
+              "occurrences": 3958,
+              "average_error": 0.0012322352841037942,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                133,
+                132
+              ],
+              "occurrences": 3637,
+              "average_error": 0.0025598220788859427,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                132,
+                131
+              ],
+              "occurrences": 3434,
+              "average_error": 0.0012322352841037942,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                133
+              ],
+              "occurrences": 411,
+              "average_error": 0.00036698064115752495,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                119
+              ],
+              "occurrences": 223,
+              "average_error": 0.0007500591437553264,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                131,
+                130
+              ],
+              "occurrences": 3346,
+              "average_error": 0.001694355150017618,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                94
+              ],
+              "occurrences": 3,
+              "average_error": 0.00028429027805526835,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                91
+              ],
+              "occurrences": 85,
+              "average_error": 0.00019233311538080212,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                132
+              ],
+              "occurrences": 199,
+              "average_error": 0.00016568814031492083,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                109,
+                108
+              ],
+              "occurrences": 3366,
+              "average_error": 0.002736101039421568,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                93
+              ],
+              "occurrences": 19,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                108,
+                109
+              ],
+              "occurrences": 2788,
+              "average_error": 0.002736101039421568,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                108
+              ],
+              "occurrences": 4728,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                118
+              ],
+              "occurrences": 190,
+              "average_error": 0.0003250051442537063,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                131
+              ],
+              "occurrences": 320,
+              "average_error": 9.124505447301552e-05,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                108
+              ],
+              "occurrences": 243,
+              "average_error": 0.0004425103740204599,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                114
+              ],
+              "occurrences": 4979,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                108,
+                107
+              ],
+              "occurrences": 1824,
+              "average_error": 0.002640791186585306,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                115
+              ],
+              "occurrences": 64,
+              "average_error": 0.00022079634705926784,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                114
+              ],
+              "occurrences": 212,
+              "average_error": 0.0003153055290953451,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                130
+              ],
+              "occurrences": 194,
+              "average_error": 0.0007227359606208043,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                107,
+                108
+              ],
+              "occurrences": 1127,
+              "average_error": 0.002640791186585306,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                134
+              ],
+              "occurrences": 846,
+              "average_error": 0.0003793326116995199,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                134
+              ],
+              "occurrences": 434,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                137
+              ],
+              "occurrences": 3,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                137
+              ],
+              "occurrences": 9,
+              "average_error": 0.0002473996377523248,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                138
+              ],
+              "occurrences": 2321,
+              "average_error": 0.0003267867652771355,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                138
+              ],
+              "occurrences": 1174,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                131,
+                138
+              ],
+              "occurrences": 1587,
+              "average_error": 0.006469839439827929,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                138,
+                131
+              ],
+              "occurrences": 983,
+              "average_error": 0.006469839439827929,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                138
+              ],
+              "occurrences": 106,
+              "average_error": 0.0003267867652771355,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                107
+              ],
+              "occurrences": 68,
+              "average_error": 0.0002827531743799268,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                128,
+                127
+              ],
+              "occurrences": 33,
+              "average_error": 0.009456820435283841,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                127,
+                128
+              ],
+              "occurrences": 31,
+              "average_error": 0.009456820435283841,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                127
+              ],
+              "occurrences": 2,
+              "average_error": 0.0003158550897890319,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                92
+              ],
+              "occurrences": 4,
+              "average_error": 0.000357776197916572,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                93
+              ],
+              "occurrences": 1,
+              "average_error": 0.0004782366971368122,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                107,
+                97
+              ],
+              "occurrences": 411,
+              "average_error": 0.0017453651703253359,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                97,
+                107
+              ],
+              "occurrences": 198,
+              "average_error": 0.0017453651703253359,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                147
+              ],
+              "occurrences": 3,
+              "average_error": 0.00024701838800633274,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                147
+              ],
+              "occurrences": 2,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                137,
+                147
+              ],
+              "occurrences": 3,
+              "average_error": 0.002601028346475437,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                127,
+                137
+              ],
+              "occurrences": 6,
+              "average_error": 0.002048906915426668,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                151
+              ],
+              "occurrences": 113,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                151
+              ],
+              "occurrences": 216,
+              "average_error": 0.0001686126528415426,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                138,
+                151
+              ],
+              "occurrences": 167,
+              "average_error": 0.0064591261368123765,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                87,
+                97
+              ],
+              "occurrences": 38,
+              "average_error": 0.0043847815740659934,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                88,
+                87
+              ],
+              "occurrences": 24,
+              "average_error": 0.004018915501156961,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                90,
+                91
+              ],
+              "occurrences": 78,
+              "average_error": 0.003967428043858218,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                89,
+                90
+              ],
+              "occurrences": 32,
+              "average_error": 0.0035961871134968237,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                89
+              ],
+              "occurrences": 1,
+              "average_error": 0.0002688002151095979,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                89,
+                88
+              ],
+              "occurrences": 26,
+              "average_error": 0.0025580998404977073,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                89
+              ],
+              "occurrences": 37,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                90,
+                89
+              ],
+              "occurrences": 55,
+              "average_error": 0.0035961871134968237,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                91,
+                90
+              ],
+              "occurrences": 111,
+              "average_error": 0.003967428043858218,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                88,
+                89
+              ],
+              "occurrences": 22,
+              "average_error": 0.0025580998404977073,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                87,
+                88
+              ],
+              "occurrences": 21,
+              "average_error": 0.004018915501156961,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                97,
+                87
+              ],
+              "occurrences": 57,
+              "average_error": 0.0043847815740659934,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                90
+              ],
+              "occurrences": 4,
+              "average_error": 0.00027492871807206255,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                88
+              ],
+              "occurrences": 3,
+              "average_error": 0.000398001215420241,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "sx",
+              "qubits": [
+                152
+              ],
+              "occurrences": 5,
+              "average_error": 0.00045088118637410173,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "rz",
+              "qubits": [
+                152
+              ],
+              "occurrences": 2,
+              "average_error": 0.0,
+              "duration_seconds": 0.0
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                151,
+                152
+              ],
+              "occurrences": 6,
+              "average_error": 0.0016679606367955568,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                151,
+                138
+              ],
+              "occurrences": 91,
+              "average_error": 0.0064591261368123765,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                151
+              ],
+              "occurrences": 15,
+              "average_error": 0.0001686126528415426,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                97
+              ],
+              "occurrences": 10,
+              "average_error": 0.00040358825028287675,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                87
+              ],
+              "occurrences": 3,
+              "average_error": 0.00025423475805003067,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                133,
+                134
+              ],
+              "occurrences": 640,
+              "average_error": 0.0028513399799312,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "cz",
+              "qubits": [
+                134,
+                133
+              ],
+              "occurrences": 427,
+              "average_error": 0.0028513399799312,
+              "duration_seconds": 6.8e-08
+            },
+            {
+              "instruction": "x",
+              "qubits": [
+                134
+              ],
+              "occurrences": 39,
+              "average_error": 0.0003793326116995199,
+              "duration_seconds": 2.4e-08
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                115
+              ],
+              "occurrences": 1,
+              "average_error": 0.00830078125,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                114
+              ],
+              "occurrences": 1,
+              "average_error": 0.0009765625,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                119
+              ],
+              "occurrences": 1,
+              "average_error": 0.00390625,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                113
+              ],
+              "occurrences": 1,
+              "average_error": 0.1171875,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                98
+              ],
+              "occurrences": 1,
+              "average_error": 0.01513671875,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                111
+              ],
+              "occurrences": 1,
+              "average_error": 0.00537109375,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                112
+              ],
+              "occurrences": 1,
+              "average_error": 0.01171875,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                108
+              ],
+              "occurrences": 1,
+              "average_error": 0.00537109375,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                109
+              ],
+              "occurrences": 1,
+              "average_error": 0.00634765625,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                110
+              ],
+              "occurrences": 1,
+              "average_error": 0.00830078125,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                129
+              ],
+              "occurrences": 1,
+              "average_error": 0.0205078125,
+              "duration_seconds": 1.66e-06
+            },
+            {
+              "instruction": "measure",
+              "qubits": [
+                118
+              ],
+              "occurrences": 1,
+              "average_error": 0.01171875,
+              "duration_seconds": 1.66e-06
+            }
+          ],
+          "active_qubit_coherence": [
+            {
+              "qubit": 87,
+              "t1_seconds": 0.00018428799116922012,
+              "t2_seconds": 0.0002633576618480504
+            },
+            {
+              "qubit": 88,
+              "t1_seconds": 0.00010898107093692224,
+              "t2_seconds": 0.0001450229527640838
+            },
+            {
+              "qubit": 89,
+              "t1_seconds": 0.00012129999079472492,
+              "t2_seconds": 5.151988492043215e-05
+            },
+            {
+              "qubit": 90,
+              "t1_seconds": 0.00010918168913713006,
+              "t2_seconds": 0.0001172254886071333
+            },
+            {
+              "qubit": 91,
+              "t1_seconds": 0.00018438543120198936,
+              "t2_seconds": 2.2251777400770376e-05
+            },
+            {
+              "qubit": 92,
+              "t1_seconds": 0.00011072083455735783,
+              "t2_seconds": 0.00012317219221127124
+            },
+            {
+              "qubit": 93,
+              "t1_seconds": 0.00016605825135155823,
+              "t2_seconds": 0.0001483760984823836
+            },
+            {
+              "qubit": 94,
+              "t1_seconds": 0.00013003868074825054,
+              "t2_seconds": 5.6650723558335814e-05
+            },
+            {
+              "qubit": 95,
+              "t1_seconds": 0.00012783742375711133,
+              "t2_seconds": 0.00012575589710936424
+            },
+            {
+              "qubit": 97,
+              "t1_seconds": 0.00010688550841001197,
+              "t2_seconds": 0.00012385772176378503
+            },
+            {
+              "qubit": 98,
+              "t1_seconds": 0.00012688112757951742,
+              "t2_seconds": 1.8553101599412267e-05
+            },
+            {
+              "qubit": 99,
+              "t1_seconds": 0.00013289568088753828,
+              "t2_seconds": 3.69155762990811e-05
+            },
+            {
+              "qubit": 107,
+              "t1_seconds": 7.889734999021742e-05,
+              "t2_seconds": 1.8165669516894073e-05
+            },
+            {
+              "qubit": 108,
+              "t1_seconds": 4.5675281060234174e-05,
+              "t2_seconds": 5.232075039030631e-05
+            },
+            {
+              "qubit": 109,
+              "t1_seconds": 0.0001755029435625249,
+              "t2_seconds": 4.5187252719462076e-05
+            },
+            {
+              "qubit": 110,
+              "t1_seconds": 0.00012147196549304695,
+              "t2_seconds": 8.984018253952224e-05
+            },
+            {
+              "qubit": 111,
+              "t1_seconds": 0.00015470443059790326,
+              "t2_seconds": 9.287640185792282e-05
+            },
+            {
+              "qubit": 112,
+              "t1_seconds": 0.0001560681233867919,
+              "t2_seconds": 0.00013529004630894955
+            },
+            {
+              "qubit": 113,
+              "t1_seconds": 0.0002088914823703864,
+              "t2_seconds": 5.3024638438367934e-05
+            },
+            {
+              "qubit": 114,
+              "t1_seconds": 9.257385873740925e-05,
+              "t2_seconds": 8.087152686139036e-05
+            },
+            {
+              "qubit": 115,
+              "t1_seconds": 0.00015260036909469938,
+              "t2_seconds": 0.00018998611062136315
+            },
+            {
+              "qubit": 118,
+              "t1_seconds": 7.609729070772188e-05,
+              "t2_seconds": 4.345196797826122e-05
+            },
+            {
+              "qubit": 119,
+              "t1_seconds": 0.00011111603784913291,
+              "t2_seconds": 0.00013642498452261597
+            },
+            {
+              "qubit": 127,
+              "t1_seconds": 0.00013367573101555523,
+              "t2_seconds": 0.0001472944458113006
+            },
+            {
+              "qubit": 128,
+              "t1_seconds": 8.898554404015615e-05,
+              "t2_seconds": 4.713215807948144e-05
+            },
+            {
+              "qubit": 129,
+              "t1_seconds": 0.00010941632506708154,
+              "t2_seconds": 5.7257921954522794e-05
+            },
+            {
+              "qubit": 130,
+              "t1_seconds": 0.00017078640567698354,
+              "t2_seconds": 0.0001637131226694943
+            },
+            {
+              "qubit": 131,
+              "t1_seconds": 0.0001890988933383647,
+              "t2_seconds": 0.000133386449845086
+            },
+            {
+              "qubit": 132,
+              "t1_seconds": 0.0001116993664721105,
+              "t2_seconds": 0.00014369151305652743
+            },
+            {
+              "qubit": 133,
+              "t1_seconds": 0.00015205308805842874,
+              "t2_seconds": 4.3143912347131556e-05
+            },
+            {
+              "qubit": 134,
+              "t1_seconds": 0.00015975785556815927,
+              "t2_seconds": 3.3855682151500116e-05
+            },
+            {
+              "qubit": 137,
+              "t1_seconds": 0.000117330178091402,
+              "t2_seconds": 0.00012428883598826102
+            },
+            {
+              "qubit": 138,
+              "t1_seconds": 9.988087155198939e-05,
+              "t2_seconds": 0.00011555896471189058
+            },
+            {
+              "qubit": 147,
+              "t1_seconds": 0.00014049359964053563,
+              "t2_seconds": 0.0001367735003891671
+            },
+            {
+              "qubit": 151,
+              "t1_seconds": 0.00010399316018160014,
+              "t2_seconds": 0.00015764903962766974
+            },
+            {
+              "qubit": 152,
+              "t1_seconds": 9.370721785173309e-05,
+              "t2_seconds": 0.00011049681232330946
+            }
+          ]
+        }
+      },
+      "candidates": [
+        {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "compilation_seconds": 4.6819083750015125,
+          "active_physical_qubits": [
+            68,
+            69,
+            78,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            97,
+            98,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            117,
+            118,
+            119,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ],
+          "two_qubit_gates": 162669,
+          "two_qubit_depth": 113002,
+          "depth": 355084,
+          "operations": {
+            "sx": 295499,
+            "rz": 188117,
+            "cz": 162669,
+            "x": 52,
+            "measure": 12
+          },
+          "calibration_error_cost": 528.5946165373875,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            130,
+            129,
+            78,
+            69,
+            93,
+            105,
+            117,
+            125,
+            127,
+            133,
+            68,
+            114,
+            131,
+            128,
+            111,
+            118,
+            119,
+            87,
+            92,
+            90,
+            112,
+            88,
+            107,
+            106,
+            109,
+            91,
+            98,
+            113,
+            89,
+            97,
+            108,
+            110,
+            132
+          ],
+          "final_layout": [
+            110,
+            112,
+            113,
+            98,
+            111,
+            108,
+            109,
+            130,
+            127,
+            118,
+            128,
+            129,
+            69,
+            92,
+            93,
+            105,
+            133,
+            117,
+            132,
+            126,
+            114,
+            106,
+            87,
+            88,
+            89,
+            131,
+            91,
+            119,
+            107,
+            97,
+            78,
+            90,
+            68
+          ]
+        },
+        {
+          "optimization_level": 3,
+          "seed_transpiler": 7,
+          "compilation_seconds": 7.296560917002353,
+          "active_physical_qubits": [
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            97,
+            98,
+            99,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            118,
+            119,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            137,
+            138,
+            147,
+            151,
+            152
+          ],
+          "two_qubit_gates": 139161,
+          "two_qubit_depth": 96504,
+          "depth": 282817,
+          "operations": {
+            "sx": 266296,
+            "cz": 139161,
+            "rz": 132883,
+            "x": 4936,
+            "measure": 12
+          },
+          "calibration_error_cost": 418.968793844802,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            99,
+            98,
+            138,
+            127,
+            97,
+            151,
+            152,
+            90,
+            87,
+            134,
+            88,
+            147,
+            95,
+            112,
+            108,
+            114,
+            107,
+            93,
+            132,
+            119,
+            115,
+            110,
+            118,
+            128,
+            130,
+            133,
+            113,
+            94,
+            111,
+            109,
+            129,
+            131,
+            91
+          ],
+          "final_layout": [
+            115,
+            114,
+            119,
+            113,
+            98,
+            111,
+            112,
+            108,
+            109,
+            110,
+            129,
+            118,
+            128,
+            90,
+            137,
+            89,
+            99,
+            95,
+            132,
+            92,
+            97,
+            107,
+            138,
+            131,
+            130,
+            133,
+            93,
+            87,
+            127,
+            151,
+            134,
+            152,
+            91
+          ]
+        },
+        {
+          "optimization_level": 3,
+          "seed_transpiler": 17,
+          "compilation_seconds": 6.464301875003002,
+          "active_physical_qubits": [
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            97,
+            98,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            117,
+            118,
+            119,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            137,
+            138,
+            147
+          ],
+          "two_qubit_gates": 139735,
+          "two_qubit_depth": 96828,
+          "depth": 283690,
+          "operations": {
+            "sx": 268456,
+            "cz": 139735,
+            "rz": 133473,
+            "x": 4908,
+            "measure": 12
+          },
+          "calibration_error_cost": 428.37319194085484,
+          "instructions_without_error_data": 0,
+          "initial_layout": [
+            113,
+            91,
+            133,
+            90,
+            119,
+            92,
+            147,
+            114,
+            87,
+            88,
+            138,
+            89,
+            112,
+            111,
+            137,
+            125,
+            132,
+            117,
+            97,
+            105,
+            109,
+            126,
+            131,
+            128,
+            118,
+            107,
+            106,
+            110,
+            127,
+            130,
+            129,
+            108,
+            98
+          ],
+          "final_layout": [
+            111,
+            118,
+            110,
+            109,
+            107,
+            108,
+            105,
+            117,
+            137,
+            125,
+            127,
+            126,
+            91,
+            129,
+            89,
+            97,
+            106,
+            128,
+            138,
+            130,
+            87,
+            119,
+            113,
+            90,
+            112,
+            131,
+            147,
+            98,
+            133,
+            114,
+            92,
+            132,
+            88
+          ]
+        }
+      ],
+      "within_existing_hardware_budget": false
+    }
+  ],
+  "completed_at": "2026-11-17T00:09:56.896768+00:00"
+}

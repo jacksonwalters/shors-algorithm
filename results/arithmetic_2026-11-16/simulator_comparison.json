@@ -1,0 +1,37 @@
+{
+  "kind": "ideal Aer samples compared with exact sparse gate simulation",
+  "experiments": [
+    {
+      "modulus": 15,
+      "base": 2,
+      "shots": 2048,
+      "aer_counts_file": "N15_a2_aer_mps.json",
+      "aer_vs_sparse_total_variation": 0.009765625,
+      "aer_vs_sparse_classical_fidelity": 0.9998753623243265
+    },
+    {
+      "modulus": 21,
+      "base": 2,
+      "shots": 2048,
+      "aer_counts_file": "N21_a2_aer_mps.json",
+      "aer_vs_sparse_total_variation": 0.05296114726218631,
+      "aer_vs_sparse_classical_fidelity": 0.973548660263059
+    },
+    {
+      "modulus": 33,
+      "base": 5,
+      "shots": 2048,
+      "aer_counts_file": "N33_a5_aer_mps.json",
+      "aer_vs_sparse_total_variation": 0.06249548665059815,
+      "aer_vs_sparse_classical_fidelity": 0.9645059095881879
+    },
+    {
+      "modulus": 35,
+      "base": 2,
+      "shots": 2048,
+      "aer_counts_file": "N35_a2_aer_mps.json",
+      "aer_vs_sparse_total_variation": 0.08472577604836809,
+      "aer_vs_sparse_classical_fidelity": 0.9555494994829942
+    }
+  ]
+}

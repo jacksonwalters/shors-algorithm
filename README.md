@@ -1,4 +1,76 @@
-# Shor demonstrations on IBM Quantum
+# Shor's algorithm: general arithmetic and IBM demonstrations
+
+The project concludes at **35 = 5 × 7 in ideal Qiskit Aer simulation**, using
+general, polynomial-size reversible arithmetic. The builder receives only
+the base, modulus, and phase precision; it uses no orbit tables, precomputed
+orders, or supplied factors. **15 and 21 were factored on IBM hardware** using
+the smaller compiled demonstrations documented below.
+
+One final optimization round reduced the general 35 circuit substantially,
+but even the smallest candidate still required **60,292 native CZ gates** on
+IBM Fez. Calibration and timing diagnostics did not support a useful hardware
+run, so no 35 job was submitted. This concludes the bounded project; larger
+numbers and further arithmetic architectures are outside its scope. See the
+[final assessment](results/final_35_2026-11-16/REPORT.md).
+
+## General arithmetic: the new implementation
+
+[`arithmetic.py`](shors_algorithm/arithmetic.py) builds constant ripple-carry
+addition, modular addition, multiply-accumulate, and controlled in-place
+modular multiplication. Carries, temporary accumulators, and flags return to
+zero. The default in-place multiplier acts as identity on control 0 and on
+unused work states `x >= N`. QPE omits range checks because its work register
+always holds a valid residue, and prepares the first controlled product
+directly from the known starting value `|1>`.
+
+For `n = ceil(log2(N))`, the controlled multiplier uses `3*n+5` qubits and
+`O(n²)` elementary gates. With the default `2*n` counting bits, the full
+order-finding circuit uses `5*n+3` qubits and `O(n³)` gates. These bounds are
+for ideal circuit gates, before routing or fault-tolerant gate synthesis.
+They describe this carry-based implementation, not Beauregard's smaller
+qubit-count construction.
+
+```sh
+python -m shors_algorithm.arithmetic_experiment --number 35 --base 2 --method aer-mps --resources
+```
+
+Install the `noise` extra for Aer; the setup section below includes it.
+`--method sparse` (the default) executes every reversible gate on a sparse
+state and applies the inverse QFT using FFTs. It has been cross-checked with
+Qiskit statevectors and independent Aer runs. It does not substitute a
+classical modular-power formula for circuit execution.
+
+```python
+from shors_algorithm import arithmetic_order_finding_circuit, simulate_arithmetic
+
+qc = arithmetic_order_finding_circuit(a=2, modulus=35)
+result = simulate_arithmetic(a=2, modulus=35, method="aer-mps")
+print(result.periods, result.factors)  # (12,), (5, 7)
+```
+
+Final ideal Aer runs for **N=35, base 2**, each with 2,048 shots and seed 7:
+
+| Counting bits | Verified period candidates | Factors | Logical qubits | CX gates before routing | Selected Fez CZ gates |
+| ---: | --- | --- | ---: | ---: | ---: |
+| 6 | 12, 24 | 5 × 7 | 27 | 25,488 | 60,292 |
+| 12 (default) | 12 | 5 × 7 | 33 | 56,823 | 139,161 |
+
+The all-to-all counts use basis `['u', 'cx']`, optimization level 1, seed 7.
+Selected device circuits use level 3, seed 7. At the same default precision,
+the final Fez count is 35% below the initial 213,936 CZ gates. Six counting
+bits further reduce the circuit, with weaker phase resolution; this setting
+is an experiment, not the usual Shor precision guarantee.
+
+The [initial arithmetic report](results/arithmetic_2026-11-16/REPORT.md) preserves
+the earlier simulation results for 15, 21, 33, and 35 and the resource baseline.
+The [design notes](docs/arithmetic.md)
+explain the carry logic, uncomputation, register layout, and simulation method.
+The experiment CLI limits local runs to `N <= 35` and 14 counting bits,
+matching the project's scope; the circuit builder itself remains general.
+All paths use one specified coprime base rather than a complete recursive
+factoring driver with automatic base retries.
+
+## Compiled IBM hardware results
 
 **Both 15 and 21 were factored on `ibm_fez` on November 16, 2026.**
 The batch used 4,096 shots per circuit and 5 seconds of QPU charge time on
@@ -72,7 +144,8 @@ python -m pip install -e '.[dev,ibm,noise,notebook]'
 python -m pytest -q
 ```
 
-The complete suite has 145 tests. An ideal local run of the small compiled
+The complete suite has 318 tests, including 173 arithmetic tests.
+An ideal local run of the small compiled
 circuits needs no IBM account:
 
 ```python
@@ -174,16 +247,17 @@ validated period yielding factors. Counts are frequencies, while phases are
 `pow(a, r, N) == 1`; factor extraction rejects odd periods and
 `pow(a, r//2, N)` equal to ±1 modulo N.
 
-## Next steps and references
+## Scope and references
 
-For a scalable multiplier, replace basis enumeration and the special orbit
-encoding with reversible modular addition and uncomputation. For these
-hardware demonstrations, useful next experiments are repeat batches across
-calibrations, additional bases, and comparison with iterative phase
-estimation to trade mid-circuit operations against routing cost.
+The final scope is 35. Simulation verifies the general arithmetic, while
+calibrated compilation documents its hardware limitations. The compact
+15/21 hardware results remain the project's completed QPU demonstrations.
+The stopping decision concerns these circuits and this device snapshot;
+it is not a claim that factoring 35 is impossible on quantum hardware.
 
 - [IBM Shor tutorial](https://quantum.cloud.ibm.com/docs/en/tutorials/shors-algorithm)
 - [Skosana and Tame: compiled demonstration for 21](https://arxiv.org/abs/2103.13855)
 - [Beauregard: Shor's algorithm using 2n+3 qubits](https://arxiv.org/abs/quant-ph/0205095)
+- [Vedral, Barenco, and Ekert: quantum arithmetic networks](https://arxiv.org/abs/quant-ph/9511018)
 - [IBM Runtime primitives](https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/runtime-service)
 - [IBM account configuration](https://quantum.cloud.ibm.com/docs/en/ibm-quantum-compute/save-credentials)
